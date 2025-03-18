@@ -6,7 +6,7 @@ def convert_temperature():
         fahrenheit_value = celsius_value * 9/5 + 32
         result_label.config(text=f"Температура в Фаренгейтах: {fahrenheit_value:.2f}")
     except ValueError:
-        result_label.config(text="Будь ласка, введіть число")
+        result_label.config(text="Введіть число")
 
 root = tk.Tk()
 root.title("Конвертер температури")
